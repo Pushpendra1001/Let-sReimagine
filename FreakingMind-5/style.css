@@ -1,0 +1,195 @@
+@font-face {
+    font-family: "myfont";
+    src: url("Helvetica.woff");
+}
+
+@font-face {
+    font-family: "myfont2";
+    src: url("remixicon\ \(1\).woff2");
+}
+:root{
+    --main-color: #101010;
+    --second-color: #1F1F1F;
+    --green-color: #CAFE3F;
+    --white-color: #FFFFFF;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    font-family: "myfont";
+}
+
+nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+#navleft h1{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+#navmid {
+    background-color: var(--second-color);
+    padding: 5px 30px;
+    border-radius: 50px;
+    display: flex;
+    gap: 20px;
+}
+#navmid h3{
+    display: inline;
+    cursor: pointer;
+}
+
+#navright{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#navright h3{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#navright button{
+    padding: 15px 30px;
+    background-color: transparent;
+    border: 2px solid var(--green-color);
+    border-radius: 50px;
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+#main{
+    height: 90vh;
+    width: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    background: url("./hero.webp");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    filter: contrast(100%);     
+    /* line-height: 1px; */
+    /* justify-content: flex-start; */
+}
+
+#title{
+    text-align: center;
+    justify-content: center;
+    /* display: flex; */
+    
+}
+
+
+
+#title :nth-child(1){
+    font-size:4vw;
+    margin-top: 10px;
+    margin-bottom: -30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 100;
+}
+
+#title :nth-child(2){
+    font-size: 4vw;
+    margin-bottom: 0px;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#asterick{
+    height: 30px;
+    /* margin-bottom: 5px; */
+}
+
+#leftbox{
+    display: flex;
+   position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 200px;
+}
+#imgbox{
+    height: 150px;
+    width: 150px;
+    background-color: var(--second-color);
+    border: 15px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -2px -2px 2px var(--green-color);
+}
+
+#leftbox img{
+    height: 120px;
+    
+    object-fit: cover;
+}
+#leftbox>img{
+    height: 300px;
+    margin-top: -100px;
+    margin-left: 20px;
+    transform: rotate(-50deg);
+}
+
+#rightbox{
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#rightbox h2{
+    font-size: 3vw;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+}
+
+#rightbox p{
+    font-size: 1vw;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+}
+
+#rightbox hr{
+    width: 150px;
+    height: 1px;
+    background-color: var(--green-color);
+}
+
+#rightbox img{
+    height: 150px;
+    margin-top: 20px;
+    align-self: center;
+}
+
+.greencolor{
+    color: var(--green-color);
+}
+
+#main2left{
+    display: flex;
+}
+
+#main2{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 10vh;
+}
