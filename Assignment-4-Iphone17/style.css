@@ -1,63 +1,213 @@
+@font-face {
+    font-family: apple;
+    src: url("./sf-pro-text_semibold.woff2");
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "apple";
 }
 body{
-    background-color: black;
+    /* background-color: black; */
 }
 
 #nav{
     display: flex;
     align-items: center;
-    height: 10vh;
+    height: 6vh;
     justify-content: center;
     gap: 40px;
+    background-color: #1D1D1F;
+    /* padding: 5px; */
 }
 
-h3{
+#nav h3{
     color: #dadada;
-    font-weight: 500;
-    font-size: 16px;
+    /* font-weight: 500; */
+    font-size: 12px;
     cursor: pointer;
+    font-weight: 100;
 }
-#container1{
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container{
+    height: 85vh;
+    padding-top: 5%;
+    margin-bottom: 10px;
 }
 
-#container1 img{
+#first{
+    background: url("iphone.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+}
+
+#second{
+    background: url("iphone2.jpg");
+    background-size: cover;
+    /* background-position: center; */
+}
+
+#second h3 , #second h1{
+    color: black;
+}
+
+#third h3 , #third h1{
+    color: black;
+}
+#second #links h3{
+    color: white;
+}
+
+#second #links #buybtn{
+    color: blue;
+}
+
+#third #links h3{
+    color: white;
+}
+
+#third #links #buybtn{
+    color: blue;
+}
+#third{
+    background: url("iphone3.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 95vh;
+}
+
+.container h1 ,  h3{
+    color: white;
+    text-align: center;
+}
+.container h1{
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+.container h3{
+    font-size: 2vw;
+    font-weight: 500;
+}
+.container img{
     max-width: 100%;
     max-height: 100%;
+}
+
+#links{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+#learnmore{
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: blue;
+    padding: 10px 20px;
+    font-size: 12px;
+    border-radius: 40px;
+}
+
+#buybtn{
+    color: #0076DF;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-size: 12px;
+    border-radius: 40px;
+    border: 2px solid #0076DF; 
 }
 
 #main{
     position: relative;
 }
 
-#boxbuy{
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
+#moreproducts{
+    height: 85vh;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    height: 40px;
-    width: 100px;
-    justify-content: center;
 }
 
-#boxbuy button{
-    background-color: #0076DF;
-    border: none;
-    border-radius: 20px;
-    height: 100%;
-    width: 100%;
-    color: white;
-    font-size: 16px;
+.moreproductbox{
+    width: 50%;
+    background: url("watch.jpg");
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 5px;
 }
+
+.moreproductbox h3{
+    color: black;
+    font-weight: 300;
+}
+
+.moreproductbox #links #learnmore{
+    color: white;
+}
+
+.moreproductbox #links #buybtn{
+    color: blue;
+}
+
+#airpods{
+    background: url("airpods.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#education{
+    background: url("education.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#macbookair{
+    background: url("macbok.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#education{
+    background: url("education.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#education{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    /* padding-top: 10%; */
+    padding-bottom: 50px;
+}
+
+#education h1 , #education h3{
+    color: white;
+}
+
+#tradeIn{
+    background: url("trade.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#card{
+    background: url("card.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
