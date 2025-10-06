@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url("./NothingPhone-2/korataki-rg-3cf0d889-B6eTgmP5.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MyFont', sans-serif;
+}
+nav{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pro{
+    width: 100%;
+    height: 90vh;
+    margin: 20px;
+}
+
+
+
+#pro img{
+    height: 50%;
+    object-fit: cover;
+    
+}
+
+#pro img{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+#pro img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
